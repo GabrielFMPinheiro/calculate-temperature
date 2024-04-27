@@ -6,7 +6,6 @@ require (
 	github.com/h2non/gock v1.2.0
 	github.com/joho/godotenv v1.5.1
 	github.com/stretchr/testify v1.9.0
-	golang.org/x/text v0.14.0
 	gopkg.in/Nhanderu/brdoc.v1 v1.1.2
 )
 
