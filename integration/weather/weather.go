@@ -2,7 +2,6 @@ package weather
 
 import (
 	"encoding/json"
-	"log"
 	"net/http"
 	"net/url"
 	"os"
@@ -28,8 +27,6 @@ type WeatherIntegration struct{}
 func (w *WeatherIntegration) GetWeather(city string) (*Weather, error) {
 	req, err := http.NewRequest("GET", "https://api.weatherapi.com/v1/current.json?key="+os.Getenv("WEATHER_API_KEY")+"&q="+url.QueryEscape(city)+"&aqi=no", nil)
 	req.Header.Set("Content-Type", "application/json")
-
-	log.Println(req.URL)
 
 	if err != nil {
 		return nil, err
