@@ -10,3 +10,14 @@ Retorno:
     "temp_F": 83.6,
     "temp_K": 301.7
 }
+
+
+Como rodar em dev:
+1. Inicie baixando o projeto na sua máquina;
+2. Instale as dependência;
+3. Faça a criação de uma conta na API https://www.weatherapi.com/;
+4. Na sua máquina faça uma cópia do arquivo .env.example e renomeia para .env;
+5. Na sua conta feita nesse site: https://www.weatherapi.com/, procute pela Api Key e cole a mesma na variável de ambiente WEATHER_API_KEY;
+6. Rode o docker compose utilizando o comando: docker compose up;
+7. Acesse o container e inicie a aplicação com o comando: go run main.go;
+8. Para rodar os testes basta usar o comando: go test ./...
